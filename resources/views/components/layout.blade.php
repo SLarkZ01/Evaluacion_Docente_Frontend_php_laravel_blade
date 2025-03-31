@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Evaluación Docentes</title>
-    <link rel="icon" href="images/Logo Uniautonoma.png">
+    <link rel="icon" href{{{  }}
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome para iconos -->
@@ -15,7 +15,7 @@
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="{{ asset('resources/css/styles.css') }}">
     <style>
-        .dashboard-card {
+        .dashboard-card {{{  }}{{  }}
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
             transition: all 0.3s;
