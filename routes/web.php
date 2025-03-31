@@ -21,5 +21,5 @@ Route::get('/login', [loginController::class, 'Login'])->name('user.login');
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Login.login');
 });
