@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Evaluación Docentes - Panel Administrador</title>
-   <link rel="icon" href="{{ asset('public/images/LogoUniautonoma.png') }}">
+    <link rel="icon" href="{{ asset('public/images/LogoUniautonoma.png') }}">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome para iconos -->
@@ -15,7 +15,7 @@
     <!-- DataTables -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
     <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="{{asset('resources/css/styles.css')}}">
+    <link rel="stylesheet" href="{{ asset('resources/css/styles.css') }}">
     <style>
         /* Estilos específicos para el panel administrador */
         .dashboard-card {
@@ -74,12 +74,12 @@
             vertical-align: middle;
             line-height: 1.5;
         }
-        
+
         /* Mejorando el espaciado entre el avatar y el texto */
         .table-admin .d-flex.align-items-center .me-2 {
             margin-right: 12px !important;
         }
-        
+
         /* Añadiendo más espacio entre el nombre y el rol */
         .table-admin .d-flex.align-items-center div p.mb-0 {
             margin-bottom: 4px !important;
@@ -406,34 +406,33 @@
                                                 <tr>
                                                     <td>
                                                         <div class="d-flex align-items-center">
-                                                                <i class="fas fa-user-shield fa-sm text-white"></i>
-                                                            </div>
-                                                            <div>
-                                                                <p class="mb-0 fw-medium">Juan Pérez</p>
-                                                                <small class="text-muted">Administrador</small>
-                                                            </div>
+                                                            <i class="fas fa-user-shield fa-sm text-white"></i>
                                                         </div>
-                                                    </td>
-                                                    <td>Modificó periodo</td>
-                                                    <td>Ayer, 15:20 PM</td>
-                                                    <td><span class="badge bg-warning text-dark">Pendiente</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="d-flex align-items-center">
-                                                            <div>
-                                                                <p class="mb-0 fw-medium">María López</p>
-                                                                <small class="text-muted">Docente</small>
-                                                            </div>
+                                                        <div>
+                                                            <p class="mb-0 fw-medium">Juan Pérez</p>
+                                                            <small class="text-muted">Administrador</small>
                                                         </div>
-                                                    </td>
-                                                    <td>Inició evaluación</td>
-                                                    <td>Ayer, 14:10 PM</td>
-                                                    <td><span class="badge bg-info">En progreso</span></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
                                     </div>
+                                    </td>
+                                    <td>Modificó periodo</td>
+                                    <td>Ayer, 15:20 PM</td>
+                                    <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div>
+                                                    <p class="mb-0 fw-medium">María López</p>
+                                                    <small class="text-muted">Docente</small>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Inició evaluación</td>
+                                        <td>Ayer, 14:10 PM</td>
+                                        <td><span class="badge bg-info">En progreso</span></td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -441,6 +440,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Bootstrap Bundle with Popper -->
@@ -450,7 +450,7 @@
     <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
     <!-- Script personalizado -->
-    <script src="admin-script.js"></script>
+    <script src="{{ asset('resources/js/admin-script.js') }}"></script>
 </body>
 
 </html>
